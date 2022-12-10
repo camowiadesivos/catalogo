@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Folks;
+    src: url(fonts/Folks-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --color-pink: #F05669;
+    --color-blue: #5CC6D0;
+    --color-green: #A8CF45;
+    --color-white: #FFFFFF;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-pink);
+    border-radius: 2rem;
+    border: 2px solid #ededed;
+}
+
+header .navbar {
+    width: 100%;
+    padding: 1rem 3rem;
+
+    background-color: var(--color-pink);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+}
+
+header .navbar a {
+    color: var(--color-white);
+
+    font-family: Folks, sans-serif;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0rem;
+}
+
+header .categories {
+    margin: 0rem 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+header .categories .navbar-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90rem;
+    margin-top: -5rem;
+}
+
+header .categories .navbar-categories .categorie-blue {
+    background-color: var(--color-blue);
+}
+
+header .categories .navbar-categories .categorie-green {
+    background-color: var(--color-green);
+}
+
+header .categories .navbar-categories .categorie-pink {
+    background-color: var(--color-pink);
+}
+
+header .categories .navbar-categories .categorie {
+    width: 12.5rem;
+    height: 4rem;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .categories .navbar-categories .categorie a {
+    color: var(--color-white);
+    font-family: Folks, sans-serif;
+    font-size: 2rem;
+}
+
+main .banner {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+main .banner img {
+    min-width: 101.5%;
+}
+
+main h2 {
+    font-family: Folks, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5rem;
+}
+
+main .best-sellers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0rem 10rem;
+}
+
+main .best-sellers div {
+    max-width: 30rem;
+}
+
+main .best-sellers div img {
+    width: 30rem;
+    transition: transform .4s;
+}
+
+main .best-sellers div img:hover {
+    transform: scale(1.2);
+}
+
+main .best-sellers div p {
+    font-family: Folks, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main .best-sellers div p:nth-child(3){
+    margin-bottom: 4rem;
+}
+
+main h2:nth-child(4) {
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    margin: 5rem 0rem;
+    padding: 0;
+    width: 100%;
+}
+
+main h2:nth-child(6) {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    width: 100%;
+    margin: 0;
+}
