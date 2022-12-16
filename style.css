@@ -176,11 +176,51 @@ main h2:nth-child(5) {
     width: 100%;
 }
 
-main h2:nth-child(7), main h2:nth-child(10) {
+main h2:nth-child(7),
+main h2:nth-child(10),
+main h2:nth-child(25),
+main h2:nth-child(28) {
     color: var(--color-white);
     background-color: var(--color-blue);
     width: 100%;
     margin: 0;
     margin-top: -1rem;
     margin-bottom: 8rem;
+}
+
+main h2:nth-child(13),
+main h2:nth-child(16),
+main h2:nth-child(31),
+main h2:nth-child(34) {
+    color: var(--color-white);
+    background-color: var(--color-green);
+    width: 100%;
+    margin: 0;
+    margin-top: -1rem;
+    margin-bottom: 8rem;
+}
+
+main h2:nth-child(19),
+main h2:nth-child(22),
+main h2:nth-child(37),
+main h2:nth-child(40) {
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    width: 100%;
+    margin: 0;
+    margin-top: -1rem;
+    margin-bottom: 8rem;
+}
+
+main .categorie-religion p,
+main .categorie-series p,
+main .categorie-movies p,
+main .categorie-profession p,
+main .categorie-signs p,
+main .categorie-lgbtqia p,
+main .categorie-phrases p,
+main .categorie-soccer p,
+main .categorie-minimalist p,
+main .categorie-flags p {
+    margin-bottom: 4rem;
 }
